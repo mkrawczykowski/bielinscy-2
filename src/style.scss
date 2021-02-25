@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
-@import "~bootstrap/scss/bootstrap";
+// Required
+// @import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+// @import "node_modules/bootstrap/scss/mixins";
 
-.col {
-  border-radius: 2px;
-  border: 2px solid black;
-}
+// OR:
+
+@import "~bootstrap/scss/bootstrap";
