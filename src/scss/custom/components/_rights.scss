@@ -1,0 +1,13 @@
+// Rights
+.rights {
+	a {
+		@include link(inherit, $primary)
+	}
+}
+
+
+.section-single-footer {
+	.rights {
+		color: $gray-400;
+	}
+}
