@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: ['./src/scripts.js', './src/style.scss'],
+  entry: ['./src/app.js', './src/style.scss'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'assets'),
@@ -24,6 +24,16 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
     ]
   },
   plugins: [
@@ -36,5 +46,8 @@ module.exports = {
         { from: "./src/images", to: "./images" },
       ],
     }),
-  ]
+  ],
+  externals: {
+    jquery: 'jQuery',
+  },
 };
