@@ -5836,7 +5836,7 @@ body {
   top: 11px;
   content: "";
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1024px) {
   .header__hamburger-button {
     display: none;
   }
@@ -5861,13 +5861,18 @@ body {
   color: #000;
   text-decoration: none;
 }
+.header nav ul li.menu-item-has-children ul.sub-menu {
+  display: none;
+  height: 0;
+  visibility: hidden;
+}
 .header__checkbox:checked ~ nav {
   right: 0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1024px) {
   .header nav {
     position: static;
     width: auto;
