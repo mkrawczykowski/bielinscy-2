@@ -1,0 +1,78 @@
+body {
+  position: relative;
+}
+
+.header {
+  .header__main-nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #e8e9ee;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__hamburger-button {
+    width: 34px;
+    position: relative;
+    height: 30px;
+    display: block;
+
+    @mixin hamburger-line {
+      height: 2px;
+      width: 100%;
+      background-color: $maincolorblue;
+      position: absolute;
+    }
+
+    .header__icon {
+      @include hamburger-line;
+      top: 14px;
+
+      &:before {
+        @include hamburger-line;
+        top: -11px;
+        content: "";
+      }
+
+      &:after {
+        @include hamburger-line;
+        top: 11px;
+        content: "";
+      }
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    transition: all 0.3s;
+    background: #fff;
+    z-index: 100;
+    width: 270px;
+
+    li {
+      a {
+        padding: 27px 20px 27px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__checkbox:checked ~ nav {
+    right: 0;
+    transition: all 0.3s;
+  }
+}
+
+.header__below-main-nav {
+  padding-top: 90px;
+}

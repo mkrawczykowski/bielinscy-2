@@ -1,10 +1,9 @@
 @charset "UTF-8";
+@import "~bootstrap/scss/bootstrap-grid";
 
-// Required
-// @import "node_modules/bootstrap/scss/functions";
-// @import "node_modules/bootstrap/scss/variables";
-// @import "node_modules/bootstrap/scss/mixins";
+@import "scss/base/reset";
+@import "scss/base/typography";
+@import "scss/base/variables";
+@import "scss/base/global";
 
-// OR:
-
-@import "~bootstrap/scss/bootstrap";
+@import "scss/layout/header";

@@ -64,3 +64,4 @@ function productsFunctions() {
 
 }
 add_action( 'init', 'productsFunctions', 0 );
+

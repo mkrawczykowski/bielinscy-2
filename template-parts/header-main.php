@@ -9,44 +9,39 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>        
+<header class="header">
+  <div class="header__main-nav">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-6 justify-content-center">
+          <a href="" class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bielinscy-90.webp" width="80" height="80" alt="Zakład Brązowniczy S.C. Bielińscy - logo"></a>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+          <input class="header__checkbox" type="checkbox" id="header__checkbox" />
+          <label class="header__hamburger-button" for="header__checkbox"><span class="header__icon"></span></label>
+          <nav>
+            <?php
+              wp_nav_menu( array(
+                'menu'          	=> 'main-menu',
+                'theme_location'	=> 'main-menu',
+                'depth'         	=> 2,
+                'container'			=> false,
+              ));
+            ?>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
+  <div class="header__below-main-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+  hhhhhhhhhhhhh
+        </div>
+      </div>      
+    </div>
 
+  </div>
 </header>
+<main>
