@@ -5836,7 +5836,7 @@ body {
   top: 11px;
   content: "";
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .header__hamburger-button {
     display: none;
   }
@@ -5872,7 +5872,7 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .header nav {
     position: static;
     width: auto;
