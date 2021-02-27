@@ -654,7 +654,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_scripts_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/scripts.js */ \"./src/js/scripts.js\");\n/* harmony import */ var _js_scripts_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_scripts_js__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack://bielinscy-2/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _js_scripts_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/scripts.js */ \"./src/js/scripts.js\");\n/* harmony import */ var _js_scripts_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_scripts_js__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://bielinscy-2/./src/app.js?");
 
 /***/ }),
 
@@ -664,7 +664,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
   \***************************/
 /***/ (function() {
 
-eval("$(function () {\n  console.log(\"ready!\");\n  $('menu-item-has-children').on('click', function () {\n    $(this).toggleClass('active');\n  });\n});\n\n//# sourceURL=webpack://bielinscy-2/./src/js/scripts.js?");
+eval("window.addEventListener('DOMContentLoaded', function (event) {\n  var itemsWithSubmenus = document.getElementsByClassName('menu-item-has-children');\n  console.log(itemsWithSubmenus);\n\n  for (var itemWithSubmenuID in itemsWithSubmenus) {\n    console.log(itemWithSubmenuID);\n\n    if (itemsWithSubmenus.hasOwnProperty(itemWithSubmenuID)) {\n      (function () {\n        var itemWithSubMenu = itemsWithSubmenus[itemWithSubmenuID];\n        itemWithSubMenu.addEventListener('click', function () {\n          itemWithSubMenu.classList.toggle('dropdown-active');\n          console.log('mouseover');\n        });\n      })();\n    }\n  }\n});\n\n//# sourceURL=webpack://bielinscy-2/./src/js/scripts.js?");
 
 /***/ }),
 
@@ -687,17 +687,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bielinscy-2/./src/style.scss?");
-
-/***/ }),
-
-/***/ "jquery":
-/*!*************************!*\
-  !*** external "jQuery" ***!
-  \*************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = jQuery;
 
 /***/ })
 

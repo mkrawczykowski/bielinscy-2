@@ -66,3 +66,9 @@ function productsFunctions() {
 }
 add_action( 'init', 'productsFunctions', 0 );
 
+
+
+function registerMainMenu() {
+    register_nav_menu( 'main-menu', __( 'Menu główne', 'bielinscy' ) );
+}
+add_action( 'after_setup_theme', 'registerMainMenu' );
