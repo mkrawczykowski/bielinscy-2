@@ -5836,6 +5836,11 @@ body {
   top: 11px;
   content: "";
 }
+@media only screen and (min-width: 640px) {
+  .header__hamburger-button {
+    display: none;
+  }
+}
 .header nav {
   position: fixed;
   top: 90px;
@@ -5847,7 +5852,7 @@ body {
   z-index: 100;
   width: 270px;
 }
-.header nav li a {
+.header nav ul li a {
   padding: 27px 20px 27px 20px;
   font-size: 14px;
   font-weight: 600;
@@ -5861,6 +5866,17 @@ body {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+@media only screen and (min-width: 640px) {
+  .header nav {
+    position: static;
+    width: auto;
+  }
+  .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header__below-main-nav {
