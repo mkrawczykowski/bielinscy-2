@@ -9,6 +9,11 @@ body {
     width: 100%;
     border-bottom: 1px solid #e8e9ee;
 
+    .header__logo {
+      width: 60px;
+      height: 60px;
+    }
+
     nav ul.menu {
       position: relative;
     }
@@ -57,12 +62,13 @@ body {
 
   nav {
     position: fixed;
-    top: 90px;
+    top: 160px;
     right: -300px;
     transition: all 0.3s;
     background: #fff;
     z-index: 100;
     width: 270px;
+    height: 100%;
 
     ul {
       li {
@@ -89,37 +95,47 @@ body {
   }
 
   @media #{$xlarge} {
-    nav {
-      position: static;
-      width: auto;
+    .header {
+      .header__main-nav {
+        .header__logo {
+          width: 60px;
+          height: 60px;
+        }
 
-      & > ul {
-        display: flex;
+        nav {
+          position: static;
+          width: auto;
+          height: auto;
 
-        li {
-          &.menu-item-has-children {
-            ul.sub-menu {
-              position: absolute;
-              top: 120px;
-              left: 0;
-              transition: 0.3s all;
-              width: 100%;
-              background-color: #fff;
-              padding: 27px;
-              border-radius: 6px;
-              box-shadow: 0 5px 10px 1px rgb(230 230 230 / 30%);
-              opacity: 0;
-              visibility: hidden;
-              display: grid;
-            }
-          }
+          & > ul {
+            display: flex;
 
-          &.menu-item-has-children.dropdown-active {
-            ul.sub-menu {
-              opacity: 1;
-              top: 80px;
-              transition: 0.3s all;
-              visibility: visible;
+            li {
+              &.menu-item-has-children {
+                ul.sub-menu {
+                  position: absolute;
+                  top: 120px;
+                  left: 0;
+                  transition: 0.3s all;
+                  width: 100%;
+                  background-color: #fff;
+                  padding: 27px;
+                  border-radius: 6px;
+                  box-shadow: 0 5px 10px 1px rgb(230 230 230 / 30%);
+                  opacity: 0;
+                  visibility: hidden;
+                  display: grid;
+                }
+              }
+
+              &.menu-item-has-children.dropdown-active {
+                ul.sub-menu {
+                  opacity: 1;
+                  top: 80px;
+                  transition: 0.3s all;
+                  visibility: visible;
+                }
+              }
             }
           }
         }
@@ -128,8 +144,28 @@ body {
   }
 }
 
-.header__below-main-nav {
+.slider {
   padding-top: 130px;
   min-height: 500px;
-  background-color: #000;
+  background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
+  background-size: cover;
+
+  .slider__small-heading {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $fontsansserif;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .slider__big-heading {
+    font-size: 68px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: $fontserif;
+    font-weight: 400;
+    text-transform: none;
+  }
 }

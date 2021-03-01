@@ -11,8 +11,8 @@
   <div class="header__main-nav">
     <div class="container py-4">
       <div class="row">
-        <div class="col-6 col-md-4 justify-content-center">
-          <a href="" class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bielinscy-90.webp" width="80" height="80" alt="Zakład Brązowniczy S.C. Bielińscy - logo"></a>
+        <div class="col-6 col-md-4">
+          <a href="" class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bielinscy-90.webp" alt="Zakład Brązowniczy S.C. Bielińscy - logo"></a>
         </div>
         <div class="col-6 col-md-8 d-flex justify-content-end align-items-center">
           <input class="header__checkbox" type="checkbox" id="header__checkbox" />
@@ -31,15 +31,8 @@
       </div>
     </div>
   </div>
-  <div class="header__below-main-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-  hhhhhhhhhhhhh
-        </div>
-      </div>      
-    </div>
-
-  </div>
+  <?php
+    get_template_part( 'template-parts/frontpage', 'slider' );
+  ?>
 </header>
 <main>

@@ -11,3 +11,22 @@ $wqhd: "only screen and (min-width: 2560px)";
 
 $maincolorblue: #2a538b;
 $maincolorgold: #b57b2f;
+$fontserif: "Libre Baskerville", "Times New Roman", Times, serif;
+$fontsansserif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+  10: $spacer * 10.5,
+  11: $spacer * 12,
+  12: $spacer * 13.5,
+) !default;
