@@ -5883,6 +5883,7 @@ body {
   .header nav > ul li.menu-item-has-children ul.sub-menu {
     position: absolute;
     top: 120px;
+    left: 0;
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
     transition: 0.3s all;
@@ -5899,7 +5900,6 @@ body {
   .header nav > ul li.menu-item-has-children.dropdown-active ul.sub-menu {
     opacity: 1;
     top: 80px;
-    left: 0;
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
     transition: 0.3s all;

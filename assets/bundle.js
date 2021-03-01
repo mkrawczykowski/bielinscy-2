@@ -664,7 +664,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
   \***************************/
 /***/ (function() {
 
-eval("window.addEventListener('DOMContentLoaded', function (event) {\n  var itemsWithSubmenus = document.getElementsByClassName('menu-item-has-children');\n  console.log(itemsWithSubmenus);\n\n  for (var itemWithSubmenuID in itemsWithSubmenus) {\n    if (itemsWithSubmenus.hasOwnProperty(itemWithSubmenuID)) {\n      (function () {\n        var itemWithSubMenu = itemsWithSubmenus[itemWithSubmenuID];\n        itemWithSubMenu.addEventListener('click', function () {\n          itemWithSubMenu.classList.toggle('dropdown-active');\n        });\n      })();\n    }\n  }\n});\n\n//# sourceURL=webpack://bielinscy-2/./src/js/scripts.js?");
+eval("window.addEventListener('DOMContentLoaded', function (event) {\n  var itemsWithSubmenus = document.getElementsByClassName('menu-item-has-children');\n  console.log(itemsWithSubmenus.length);\n\n  var _loop = function _loop(itemWithSubmenuID) {\n    if (itemsWithSubmenus.hasOwnProperty(itemWithSubmenuID)) {\n      var itemWithSubMenu = itemsWithSubmenus[itemWithSubmenuID];\n      itemWithSubMenu.addEventListener('click', function () {\n        for (x = 0; x < itemsWithSubmenus.length; x++) {\n          var thisItem = itemsWithSubmenus[x];\n\n          if (x != itemWithSubmenuID) {\n            thisItem.classList.remove('dropdown-active');\n          }\n        }\n\n        itemWithSubMenu.classList.toggle('dropdown-active');\n      });\n    }\n  };\n\n  for (var itemWithSubmenuID in itemsWithSubmenus) {\n    _loop(itemWithSubmenuID);\n  }\n});\n\n//# sourceURL=webpack://bielinscy-2/./src/js/scripts.js?");
 
 /***/ }),
 
