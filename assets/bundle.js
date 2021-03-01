@@ -664,7 +664,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
   \***************************/
 /***/ (function() {
 
-eval("window.addEventListener('DOMContentLoaded', function (event) {\n  var itemsWithSubmenus = document.getElementsByClassName('menu-item-has-children');\n  console.log(itemsWithSubmenus);\n\n  for (var itemWithSubmenuID in itemsWithSubmenus) {\n    console.log(itemWithSubmenuID);\n\n    if (itemsWithSubmenus.hasOwnProperty(itemWithSubmenuID)) {\n      (function () {\n        var itemWithSubMenu = itemsWithSubmenus[itemWithSubmenuID];\n        itemWithSubMenu.addEventListener('click', function () {\n          itemWithSubMenu.classList.toggle('dropdown-active');\n          console.log('mouseover');\n        });\n      })();\n    }\n  }\n});\n\n//# sourceURL=webpack://bielinscy-2/./src/js/scripts.js?");
+eval("window.addEventListener('DOMContentLoaded', function (event) {\n  var itemsWithSubmenus = document.getElementsByClassName('menu-item-has-children');\n  console.log(itemsWithSubmenus);\n\n  for (var itemWithSubmenuID in itemsWithSubmenus) {\n    if (itemsWithSubmenus.hasOwnProperty(itemWithSubmenuID)) {\n      (function () {\n        var itemWithSubMenu = itemsWithSubmenus[itemWithSubmenuID];\n        itemWithSubMenu.addEventListener('click', function () {\n          itemWithSubMenu.classList.toggle('dropdown-active');\n        });\n      })();\n    }\n  }\n});\n\n//# sourceURL=webpack://bielinscy-2/./src/js/scripts.js?");
 
 /***/ }),
 

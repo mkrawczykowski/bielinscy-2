@@ -8,6 +8,10 @@ body {
     background-color: #fff;
     width: 100%;
     border-bottom: 1px solid #e8e9ee;
+
+    nav ul.menu {
+      position: relative;
+    }
   }
 
   &__checkbox {
@@ -73,9 +77,6 @@ body {
         }
         &.menu-item-has-children {
           ul.sub-menu {
-            display: none;
-            height: 0;
-            visibility: hidden;
           }
         }
       }
@@ -92,13 +93,44 @@ body {
       position: static;
       width: auto;
 
-      ul {
+      & > ul {
         display: flex;
+
+        li {
+          &.menu-item-has-children {
+            ul.sub-menu {
+              position: absolute;
+              top: 120px;
+              transition: 0.3s all;
+              width: 100%;
+              background-color: #fff;
+              padding: 27px;
+              border-radius: 6px;
+              box-shadow: 0 5px 10px 1px rgb(230 230 230 / 30%);
+              opacity: 0;
+              visibility: hidden;
+              display: grid;
+            }
+          }
+
+          &.menu-item-has-children.dropdown-active {
+            ul.sub-menu {
+              opacity: 1;
+
+              top: 80px;
+              left: 0;
+              transition: 0.3s all;
+              visibility: visible;
+            }
+          }
+        }
       }
     }
   }
 }
 
 .header__below-main-nav {
-  padding-top: 90px;
+  padding-top: 130px;
+  min-height: 500px;
+  background-color: #000;
 }
