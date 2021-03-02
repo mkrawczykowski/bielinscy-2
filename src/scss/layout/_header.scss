@@ -13,7 +13,7 @@ body {
     height: 60px;
   }
 
-  nav {
+  .header__nav {
     position: fixed;
     top: 160px;
     right: -300px;
@@ -92,7 +92,7 @@ body {
       height: 60px;
     }
 
-    nav {
+    .header__nav {
       position: static;
       width: auto;
       height: auto;
@@ -101,7 +101,30 @@ body {
         display: flex;
 
         li {
+          a {
+            &:hover {
+              color: $maincolorgold;
+            }
+          }
+
           &.menu-item-has-children {
+            a {
+              &:after {
+                content: "";
+                width: 17px;
+                height: 11px;
+                display: inline-block;
+                background: url("./images/menu-arrow.svg") no-repeat center center;
+                transform: rotate(0);
+                transition: all 0.3s;
+              }
+              &:hover {
+                &:after {
+                  transition: all 0.3s;
+                  transform: rotate(180deg);
+                }
+              }
+            }
             ul.sub-menu {
               position: absolute;
               top: 120px;

@@ -16,7 +16,7 @@
         <div class="col-6 col-md-8 d-flex justify-content-end align-items-center">
           <input class="header__checkbox" type="checkbox" id="header__checkbox" />
           <label class="header__hamburger-button" for="header__checkbox"><span class="header__icon"></span></label>
-          <nav>
+          <nav class="header__nav">
             <?php
               wp_nav_menu( array(
                 'menu'          	=> 'main-menu',
