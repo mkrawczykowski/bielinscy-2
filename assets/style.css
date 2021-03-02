@@ -8738,18 +8738,39 @@ body {
   position: relative;
 }
 
-.header .header__main-nav {
+.header {
   position: fixed;
   background-color: #fff;
   width: 100%;
   border-bottom: 1px solid #e8e9ee;
 }
-.header .header__main-nav .header__logo {
+.header .header__logo {
   width: 60px;
   height: 60px;
 }
-.header .header__main-nav nav ul.menu {
+.header nav {
+  position: fixed;
+  top: 160px;
+  right: -300px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #fff;
+  z-index: 100;
+  width: 270px;
+  height: 100%;
+}
+.header nav ul.menu {
   position: relative;
+}
+.header nav ul.menu li a {
+  padding: 27px 20px 27px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
 }
 .header__checkbox {
   display: none;
@@ -8783,54 +8804,29 @@ body {
   top: 11px;
   content: "";
 }
-@media only screen and (min-width: 1200px) {
-  .header__hamburger-button {
-    display: none;
-  }
-}
-.header nav {
-  position: fixed;
-  top: 160px;
-  right: -300px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  background: #fff;
-  z-index: 100;
-  width: 270px;
-  height: 100%;
-}
-.header nav ul li a {
-  padding: 27px 20px 27px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-}
 .header__checkbox:checked ~ nav {
   right: 0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 @media only screen and (min-width: 1200px) {
-  .header .header .header__main-nav .header__logo {
+  .header .header__logo {
     width: 60px;
     height: 60px;
   }
-  .header .header .header__main-nav nav {
+  .header nav {
     position: static;
     width: auto;
     height: auto;
   }
-  .header .header .header__main-nav nav > ul {
+  .header nav > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header .header .header__main-nav nav > ul li.menu-item-has-children ul.sub-menu {
+  .header nav > ul li.menu-item-has-children ul.sub-menu {
     position: absolute;
     top: 120px;
     left: 0;
@@ -8847,7 +8843,7 @@ body {
     visibility: hidden;
     display: grid;
   }
-  .header .header .header__main-nav nav > ul li.menu-item-has-children.dropdown-active ul.sub-menu {
+  .header nav > ul li.menu-item-has-children.dropdown-active ul.sub-menu {
     opacity: 1;
     top: 80px;
     -webkit-transition: 0.3s all;
@@ -8855,8 +8851,10 @@ body {
     transition: 0.3s all;
     visibility: visible;
   }
+  .header__hamburger-button {
+    display: none;
+  }
 }
-
 .slider {
   padding-top: 130px;
   min-height: 500px;

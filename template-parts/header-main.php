@@ -8,7 +8,6 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__main-nav">
     <div class="container py-4">
       <div class="row">
         <div class="col-6 col-md-4">
@@ -29,10 +28,9 @@
           </nav>
         </div>
       </div>
-    </div>
-  </div>
-  <?php
+    </div> 
+</header>
+<?php
     get_template_part( 'template-parts/frontpage', 'slider' );
   ?>
-</header>
 <main>
