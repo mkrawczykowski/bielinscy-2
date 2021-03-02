@@ -1,4 +1,17 @@
 .footer {
   background-color: $color-1;
-  color: #fff;
+
+  p {
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    font-family: $font-2;
+  }
 }

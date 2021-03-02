@@ -199,3 +199,34 @@ body {
     padding-left: 30px;
   }
 }
+
+.page-title {
+  padding-top: 130px;
+  background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
+  background-size: cover;
+
+  .page-title__small-heading {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font-2;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .page-title__big-heading {
+    font-size: 68px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: $font-1;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .page-title__paragraph {
+    color: #fff;
+    border-left: 2px solid $color-2;
+    padding-left: 30px;
+  }
+}
