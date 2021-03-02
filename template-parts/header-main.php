@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="container py-4">
+    <div class="container">
       <div class="row">
         <div class="col-6 col-md-4">
           <a href="" class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bielinscy-90.webp" alt="Zakład Brązowniczy S.C. Bielińscy - logo"></a>
