@@ -2,7 +2,7 @@
 </body>
 <footer class="footer py-7">
   <div class="container">
-    <div class="row">
+    <div class="row gx-7">
       <div class="col">
         <h3 class="footer__heading">O nas</h3>
         <p class="footer__paragraph">Farite Church is a Family of Faith that is committed to Bible teaching and joyful worship. People of all ages are ministered to and given opportunities to serve the Lord by serving others at our welcoming community.</p>
