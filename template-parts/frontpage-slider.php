@@ -1,6 +1,6 @@
 <div class="slider">
   <div class="container">
-    <div class="row py-11">
+    <div class="row py-3 py-lg-11">
       <div class="col-12 col-lg-6">
         <h2 class="slider__small-heading">Coś</h2>
         <h1 class="slider__big-heading">Większy tytuł</h1>
@@ -12,9 +12,7 @@
           }
         ?> -->
       </div>
-      <div class="col-12 col-lg-6">
-        s
-      </div>
+      <div class="col-12 col-lg-6"></div>
     </div>      
   </div>
 </div>
