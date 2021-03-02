@@ -59,7 +59,7 @@ body {
     @mixin hamburger-line {
       height: 2px;
       width: 100%;
-      background-color: $maincolorblue;
+      background-color: $color-1;
       position: absolute;
     }
 
@@ -112,7 +112,7 @@ body {
 
           & > a {
             &:hover {
-              color: $maincolorgold;
+              color: $color-2;
             }
           }
 
@@ -177,7 +177,7 @@ body {
   .slider__small-heading {
     font-size: 16px;
     line-height: 1.5;
-    font-family: $fontsansserif;
+    font-family: $font-2;
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -188,8 +188,14 @@ body {
     font-size: 68px;
     line-height: 1.5;
     color: #fff;
-    font-family: $fontserif;
+    font-family: $font-1;
     font-weight: 400;
     text-transform: none;
+  }
+
+  .slider__paragraph {
+    color: #fff;
+    border-left: 2px solid $color-2;
+    padding-left: 30px;
   }
 }

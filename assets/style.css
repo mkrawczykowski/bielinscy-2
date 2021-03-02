@@ -8734,6 +8734,49 @@ body {
   color: #6a7a83;
 }
 
+.button {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button.button-color-1 {
+  color: #fff;
+  background-color: #2a538b;
+  border-color: #2a538b;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button.button-color-1:hover {
+  color: #fff;
+  background-color: #b57b2f;
+  border-color: #b57b2f;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button.button-color-2 {
+  color: #fff;
+  background-color: #b57b2f;
+  border-color: #b57b2f;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button.button-color-2:hover {
+  color: #fff;
+  background-color: #2a538b;
+  border-color: #2a538b;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 body {
   position: relative;
 }
@@ -8918,4 +8961,9 @@ body {
   font-family: "Libre Baskerville", "Times New Roman", Times, serif;
   font-weight: 400;
   text-transform: none;
+}
+.slider .slider__paragraph {
+  color: #fff;
+  border-left: 2px solid #b57b2f;
+  padding-left: 30px;
 }

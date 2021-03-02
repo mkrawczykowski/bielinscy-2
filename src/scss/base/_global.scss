@@ -5,3 +5,43 @@ body {
   font-weight: 400;
   color: #6a7a83;
 }
+
+.button {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.button-color-1 {
+    color: #fff;
+    background-color: $color-1;
+    border-color: $color-1;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #fff;
+      background-color: $color-2;
+      border-color: $color-2;
+      transition: all 0.3s;
+    }
+  }
+
+  &.button-color-2 {
+    color: #fff;
+    background-color: $color-2;
+    border-color: $color-2;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #fff;
+      background-color: $color-1;
+      border-color: $color-1;
+      transition: all 0.3s;
+    }
+  }
+}
