@@ -54,7 +54,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "./src/images", to: "./images" },
+        // { from: "./src/images", to: "./images" },
+        // { from: "./src/js/object2vr", to: "./object2vr" },
+        { from: path.resolve(__dirname, "src", "images"), to: path.resolve(__dirname, "assets", "images") },
+        { from: path.resolve(__dirname, "src", "js/object2vr"), to: path.resolve(__dirname, "assets", "object2vr") }
       ],
     }),
   ],

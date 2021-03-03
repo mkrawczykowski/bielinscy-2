@@ -117,7 +117,7 @@ body {
           }
 
           &.menu-item-has-children {
-            a {
+            & > a {
               &:after {
                 content: "";
                 width: 17px;
@@ -147,6 +147,24 @@ body {
               opacity: 0;
               visibility: hidden;
               display: grid;
+              grid-template-columns: 1fr 1fr;
+
+              li {
+                a {
+                  padding: 10px 20px 10px 20px;
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: 0.07em;
+                  text-transform: none;
+                  color: #000;
+                  text-decoration: none;
+
+                  &:hover {
+                    color: $color-2;
+                  }
+                }
+              }
             }
           }
 
