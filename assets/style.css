@@ -8783,6 +8783,10 @@ h6 {
   color: #2a538b;
 }
 
+.text-center {
+  text-align: center;
+}
+
 body {
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
@@ -9098,4 +9102,118 @@ body {
 .footer h6 {
   color: #fff;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.product-archive p {
+  margin-bottom: 1.5rem;
+}
+.product-archive__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+}
+.product-archive__list .product-archive__item {
+  width: 100%;
+  padding-top: 90%;
+  position: relative;
+}
+.product-archive__list .product-archive__item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 35px;
+  right: 0;
+  background-size: contain;
+  background-position: center center;
+}
+.product-archive__list .product-archive__item h4 {
+  text-align: center;
+}
+
+.contact-form .nf-form-fields-required {
+  margin-bottom: 10px;
+}
+.contact-form .nf-form-content {
+  padding: 0;
+}
+.contact-form .nf-form-content .nf-field-container {
+  margin-bottom: 8px;
+}
+.contact-form .nf-form-content .nf-field-label {
+  margin-bottom: 5px !important;
+}
+.contact-form .nf-form-content .nf-field-label label {
+  width: 100%;
+  padding-right: 150px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #aeb1be;
+  cursor: pointer;
+  font-weight: 400;
+}
+.contact-form .nf-form-content input:not([type=button]),
+.contact-form .nf-form-content textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 19px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71429;
+  color: #1c2647;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #c5c6cd;
+}
+.contact-form .nf-form-content input[type=button] {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 0;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2a538b;
+  border-color: #2a538b;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact-form .nf-form-content input[type=button]:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #b57b2f;
+  border-color: #b57b2f;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-icons {
+  display: grid;
+}
+.contact-icons__telephone {
+  text-align: center;
+}
+.contact-icons__telephone img {
+  width: 20px;
+  display: inline-block;
+}
+.contact-icons__email {
+  text-align: center;
+}
+.contact-icons__email img {
+  width: 20px;
+  display: inline-block;
+}
+.contact-icons__address {
+  text-align: center;
+}
+.contact-icons__address img {
+  width: 20px;
+  display: inline-block;
 }

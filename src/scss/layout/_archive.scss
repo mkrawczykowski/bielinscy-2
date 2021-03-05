@@ -1,0 +1,31 @@
+.product-archive {
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+
+    .product-archive__item {
+      width: 100%;
+      padding-top: 90%;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 35px;
+        right: 0;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}

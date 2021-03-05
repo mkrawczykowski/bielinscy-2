@@ -1,10 +1,10 @@
 <div class="container" style="" class="three-products mt-4 pt-4">
 	<div class="row my-4 py-4">
 		<div class="col">
-			<h2 class="text-center">
+			<h2 class="d-flex justify-content-center">
 				Wyróżnione produkty
 			</h2>
-			<p class="text-center">
+			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut tincidunt sem, vitae tristique nisi. Cras ut tellus ut sapien aliquam vulputate.
 			</p>
 		</div>

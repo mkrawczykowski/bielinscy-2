@@ -46,7 +46,7 @@ function productsFunctions() {
 	$args = array(
 		'label'                 => __( 'Produkt', 'bielinscy' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -66,7 +66,7 @@ function productsFunctions() {
 }
 add_action( 'init', 'productsFunctions', 0 );
 
-
+ add_theme_support( 'post-thumbnails', array( 'produkt' ));
 
 function registerMainMenu() {
     register_nav_menu( 'main-menu', __( 'Menu główne', 'bielinscy' ) );
