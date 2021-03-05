@@ -1,4 +1,4 @@
-<div class="container" style="" class="three-products  mt-4 pt-4">
+<div class="container" style="" class="three-products mt-4 pt-4">
 	<div class="row my-4 py-4">
 		<div class="col">
 			<h2 class="text-center">
@@ -9,24 +9,24 @@
 			</p>
 		</div>
 	</div>
-<div class="row mb-4 py-4">
+	<div class="row mb-4 py-4">
 	<div class="col-sm m-3">
 		<h3 class="text-center">Produkt XYZ1</h3>
-		<div id="product1" style="height: 380px;"></div>
+		<div id="product1" style="height: 500px;" class="three-products__product"></div>
 		<div class="button-outer">
 			
 		</div>
 	</div>
 	<div class="col-sm m-3">
 		<h3 class="text-center">Produkt XYZ2</h3>
-		<div id="product2" style="height: 380px;"></div>
+		<div id="product2" style="height: 500px;" class="three-products__product"></div>
 		<div class="button-outer">
 			
 		</div>
 	</div>
 	<div class="col-sm m-3">
 		<h3 class="text-center">Produkt XYZ3</h3>
-		<div id="product3" style="height: 380px;"></div>
+		<div id="product3" style="height: 500px;" class="three-products__product"></div>
 		<div class="button-outer">
 			
 		</div>
