@@ -3,20 +3,23 @@
 <footer class="footer py-7">
   <div class="container">
     <div class="row gx-7">
-      <div class="col">
-        <h3 class="footer__heading">O nas</h3>
-        <p class="footer__paragraph">Farite Church is a Family of Faith that is committed to Bible teaching and joyful worship. People of all ages are ministered to and given opportunities to serve the Lord by serving others at our welcoming community.</p>
-      </div>
-      <div class="col">
-        <h3 class="footer__heading">Kontakt</h3>
-        <p class="footer__icon icon-place">2130 Fulton Street San Diego, CA 94117-1080 USA</p>
-        <p class="footer__icon icon-telephone">1-800-1234-678</p>
-        <p class="footer__icon icon-email">info@demolink.org</p>
-      </div>
-      <div class="col">
-        <h3 class="footer__heading">Oferta</h3>
-        <p class="footer__paragraph">Link</br >Link</br >Link</br></p>
-      </div>
+      <?php
+        $field1heading = get_field('field1__heading', 'options');
+        $field1 = get_field('field1', 'options');
+
+        function generateFooterColumn($heading, $content){
+          if ($content){
+            echo '<div class="col">';
+            if ($heading) printf('<h3 class="footer__heading">%s</h3>', $heading);
+            printf('<p class="footer__paragraph">%s</p>', $content);
+            echo '</div>';
+          }
+        }
+      
+      generateFooterColumn(get_field('field1__heading', 'options'), get_field('field1', 'options'));
+      generateFooterColumn(get_field('field2__heading', 'options'), get_field('field2', 'options'));
+      generateFooterColumn(get_field('field3__heading', 'options'), get_field('field3', 'options'));
+     ?>
     </div>
   </div>
 </footer>
