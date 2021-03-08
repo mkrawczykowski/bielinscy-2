@@ -34,10 +34,8 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
         $featuredImgUrl = get_the_post_thumbnail_url(get_the_ID(),'full'); 
         ?>
-
-<li class="product-archive__item">
+        <li class="product-archive__item">
           <span style="background-image: url('<?php echo esc_url($featuredImgUrl); ?>');">
-            
           </span><h4><?php print the_title(); ?></h4>
         </li>
 

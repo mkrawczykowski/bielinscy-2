@@ -4,7 +4,7 @@
 			<h2 class="d-flex justify-content-center">
 				Wyróżnione produkty
 			</h2>
-			<p>
+			<p class="text-center">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut tincidunt sem, vitae tristique nisi. Cras ut tellus ut sapien aliquam vulputate.
 			</p>
 		</div>
@@ -13,23 +13,26 @@
 	<div class="col-sm m-3">
 		<h3 class="text-center">Produkt XYZ1</h3>
 		<div id="product1" style="height: 500px;" class="three-products__product"></div>
-		<div class="button-outer">
-			
+		<div class="d-flex justify-content-center mt-5">
+			<div class="button button-color-1">Więcej informacji</div>
 		</div>
+		
 	</div>
 	<div class="col-sm m-3">
 		<h3 class="text-center">Produkt XYZ2</h3>
 		<div id="product2" style="height: 500px;" class="three-products__product"></div>
-		<div class="button-outer">
-			
+		<div class="d-flex justify-content-center mt-5">
+			<div class="button button-color-1">Więcej informacji</div>
 		</div>
+		
 	</div>
 	<div class="col-sm m-3">
 		<h3 class="text-center">Produkt XYZ3</h3>
 		<div id="product3" style="height: 500px;" class="three-products__product"></div>
-		<div class="button-outer">
-			
+		<div class="d-flex justify-content-center mt-5">
+			<div class="button button-color-1">Więcej informacji</div>
 		</div>
+		
 	</div>
 
 </div>

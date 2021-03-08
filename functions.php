@@ -3,7 +3,7 @@
 function enqueueScripts(){
   
   wp_enqueue_style( 'mainCSS', get_template_directory_uri() . '/assets/style.css');  
-  wp_dequeue_style( 'wp-block-library' );
+  // wp_dequeue_style( 'wp-block-library' );
 	
 	wp_register_script( 'mainJS', get_template_directory_uri() . '/assets/bundle.js', array( 'jquery' ));  
 	wp_enqueue_script('mainJS');

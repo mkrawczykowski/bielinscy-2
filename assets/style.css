@@ -8733,6 +8733,7 @@ p {
   line-height: 1.71429;
   font-weight: 400;
   color: #1c2647;
+  margin-bottom: 15px;
 }
 
 h1 {
@@ -8749,14 +8750,16 @@ h2 {
   line-height: 1.71429;
   font-weight: 700;
   color: #2a538b;
+  margin-top: 10px;
 }
 
 h3 {
   font-size: 24px;
   font-family: "Libre Baskerville", "Times New Roman", Times, serif;
   line-height: 1.71429;
-  font-weight: 700;
+  font-weight: 400;
   color: #2a538b;
+  margin-top: 10px;
 }
 
 h4 {
@@ -8765,6 +8768,7 @@ h4 {
   line-height: 1.71429;
   font-weight: 600;
   color: #2a538b;
+  margin-top: 10px;
 }
 
 h5 {
@@ -8773,6 +8777,7 @@ h5 {
   line-height: 1.71429;
   font-weight: 600;
   color: #2a538b;
+  margin-top: 10px;
 }
 
 h6 {
@@ -8781,6 +8786,7 @@ h6 {
   line-height: 1.71429;
   font-weight: 600;
   color: #2a538b;
+  margin-top: 10px;
 }
 
 .text-center {
@@ -8800,7 +8806,6 @@ body {
   line-height: 1.5;
   padding: 15px 35px;
   display: inline-block;
-  margin-top: 20px;
   border-radius: 5px;
 }
 .button:hover {
