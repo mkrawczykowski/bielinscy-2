@@ -72,3 +72,11 @@ function registerMainMenu() {
     register_nav_menu( 'main-menu', __( 'Menu główne', 'bielinscy' ) );
 }
 add_action( 'after_setup_theme', 'registerMainMenu' );
+
+if (function_exists('acf_add_options_page')){
+	acf_add_options_page(array(
+		'page_title' => 'Ustawienia sklepu',
+		'menu_title' => 'Ustawienia sklepu',
+		'menu_slug' => 'acf-settings'
+	));
+}
