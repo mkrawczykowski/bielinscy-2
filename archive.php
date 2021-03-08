@@ -20,11 +20,6 @@ if ($archiveDescription){
         'order' => 'ASC', 
     );
 
-
-
-
-
-
     $the_query = new WP_Query( $args );
  
 // The Loop
@@ -34,10 +29,12 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
         $featuredImgUrl = get_the_post_thumbnail_url(get_the_ID(),'full'); 
         ?>
-        <li class="product-archive__item">
-          <span style="background-image: url('<?php echo esc_url($featuredImgUrl); ?>');">
-          </span><h4><?php print the_title(); ?></h4>
-        </li>
+        <a href="<?php the_permalink(); ?>">
+          <li class="product-archive__item">
+            <span style="background-image: url('<?php echo esc_url($featuredImgUrl); ?>');">
+            </span><h4><?php print the_title(); ?></h4>
+          </li>
+        </a>
 
 
 <?php
