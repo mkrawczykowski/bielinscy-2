@@ -8865,11 +8865,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logo-nav__logo {
+  margin-right: auto;
+  margin: 10px 0 10px 0;
 }
 .logo-nav__main-menu {
   background-color: #fff;
   position: fixed;
-  top: 0;
+  top: 90px;
   right: -360px;
   height: 100vh;
   width: 100%;
@@ -8880,6 +8890,9 @@ body {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
   overflow-y: scroll;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .logo-nav__main-menu > li {
   font-size: 24px;
@@ -8956,6 +8969,12 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.logo-nav__main-menu.active {
+  right: 0;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
 .logo-nav__hamburger-menu {
   display: inline-block;
   width: 30px;
@@ -8966,32 +8985,60 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: #000;
+  background-color: black;
   position: absolute;
   top: 14px;
   left: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .logo-nav__hamburger-menu span:before {
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: #000;
+  background-color: black;
   position: absolute;
   top: -10px;
   left: 0;
   content: "";
   display: block;
+  -webkit-transform: rotateZ(0);
+      -ms-transform: rotate(0);
+          transform: rotateZ(0);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .logo-nav__hamburger-menu span:after {
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: #000;
+  background-color: black;
   position: absolute;
   top: 10px;
   left: 0;
   content: "";
   display: block;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.logo-nav__hamburger-menu.open span {
+  background-color: rgba(0, 0, 0, 0);
+}
+.logo-nav__hamburger-menu.open span:before {
+  -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotateZ(45deg);
+  top: 0;
+  left: 0;
+}
+.logo-nav__hamburger-menu.open span:after {
+  -webkit-transform: rotateZ(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotateZ(-45deg);
+  top: 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -9019,9 +9066,17 @@ body {
     border-left: none;
     -webkit-box-shadow: none;
             box-shadow: none;
+    right: 0;
+    top: 0;
   }
   .logo-nav__main-menu > li {
     font-size: 24px;
+  }
+  .logo-nav__main-menu > li.current_page_item {
+    background-color: #fff;
+  }
+  .logo-nav__main-menu > li.current_page_item a {
+    color: #b57b2f;
   }
   .logo-nav__main-menu > li a {
     text-decoration: none;
@@ -9034,6 +9089,16 @@ body {
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .logo-nav__main-menu > li.dropdown-active {
+    background-color: #fff;
+  }
+  .logo-nav__main-menu > li.dropdown-active > a {
+    color: #b57b2f;
   }
   .logo-nav__main-menu > li.dropdown-active > .sub-menu {
     position: absolute;
@@ -9046,7 +9111,6 @@ body {
   }
 }
 .slider {
-  padding-top: 130px;
   min-height: 500px;
   background: url(././images/bielinscy-frontpage.webp) no-repeat center center;
   background-size: cover;
@@ -9075,7 +9139,8 @@ body {
 }
 
 .page-title {
-  padding-top: 130px;
+  padding-top: 40px;
+  padding-bottom: 36px;
   background: url(././images/bielinscy-frontpage.webp) no-repeat center center;
   background-size: cover;
 }
@@ -9127,6 +9192,9 @@ body {
 .footer h6 {
   color: #fff;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.footer a {
+  color: #fff;
 }
 
 .product-archive p {

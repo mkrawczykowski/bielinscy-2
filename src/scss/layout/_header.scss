@@ -16,7 +16,6 @@ body {
 @import "./header-nav-xlarge";
 
 .slider {
-  padding-top: 130px;
   min-height: 500px;
   background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
   background-size: cover;
@@ -48,7 +47,8 @@ body {
 }
 
 .page-title {
-  padding-top: 130px;
+  padding-top: 40px;
+  padding-bottom: 36px;
   background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
   background-size: cover;
 

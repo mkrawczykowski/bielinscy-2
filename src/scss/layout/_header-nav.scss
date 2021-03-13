@@ -1,12 +1,17 @@
 .logo-nav {
   display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin-right: auto;
+    margin: 10px 0 10px 0;
+  }
 
   &__main-menu {
     background-color: #fff;
     position: fixed;
-    top: 0;
+    top: 90px;
     right: -360px;
     height: 100vh;
     width: 100%;
@@ -16,6 +21,7 @@
     border-left: 1px solid $color-5;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
     overflow-y: scroll;
+    transition: all 0.3s ease-out;
 
     & > li {
       font-size: 24px;
@@ -98,6 +104,11 @@
         }
       }
     }
+
+    &.active {
+      right: 0;
+      transition: all 0.3s ease-in;
+    }
   }
 
   &__hamburger-menu {
@@ -111,13 +122,14 @@
         width: 100%;
         height: 4px;
         border-radius: 5px;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 255);
         position: absolute;
       }
 
       @include hamburger-line;
       top: 14px;
       left: 0;
+      transition: all 0.2s ease;
 
       &:before {
         @include hamburger-line;
@@ -125,6 +137,8 @@
         left: 0;
         content: "";
         display: block;
+        transform: rotateZ(0);
+        transition: all 0.2s ease;
       }
 
       &:after {
@@ -133,6 +147,24 @@
         left: 0;
         content: "";
         display: block;
+        transition: all 0.2s ease;
+      }
+    }
+
+    &.open {
+      span {
+        background-color: rgba(0, 0, 0, 0);
+
+        &:before {
+          transform: rotateZ(45deg);
+          top: 0;
+          left: 0;
+        }
+
+        &:after {
+          transform: rotateZ(-45deg);
+          top: 0;
+        }
       }
     }
   }

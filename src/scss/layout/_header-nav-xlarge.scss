@@ -18,9 +18,19 @@
       overflow-y: visible;
       border-left: none;
       box-shadow: none;
+      right: 0;
+      top: 0;
 
       & > li {
         font-size: 24px;
+
+        &.current_page_item {
+          background-color: #fff;
+
+          a {
+            color: $color-2;
+          }
+        }
 
         a {
           text-decoration: none;
@@ -34,12 +44,22 @@
           opacity: 0;
           visibility: hidden;
           background-color: #fff;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
 
           li {
           }
         }
 
         &.dropdown-active {
+          background-color: #fff;
+
+          & > a {
+            color: $color-2;
+          }
+
           & > .sub-menu {
             position: absolute;
             opacity: 1;
