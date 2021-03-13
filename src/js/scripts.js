@@ -1,41 +1,23 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  const itemsWithSubmenus = document.getElementsByClassName('menu-item-has-children');
-  const items = document.querySelectorAll('.header__nav > .menu > .menu-item');
+  const itemsWithSubmenus = document.querySelectorAll('.menu-item-has-children');
+  // const items = document.querySelectorAll('.logo-nav__main-menu .menu-item a');
+  console.log(itemsWithSubmenus);
 
-  for (const itemID in items) {
-    if (items.hasOwnProperty(itemID)) {
-      const item = items[itemID];
-      item.addEventListener('mouseover', () => {
+  for (const itemID in itemsWithSubmenus) {
+    console.log(itemID);
+    if (itemsWithSubmenus.hasOwnProperty(itemID)) {
+      const item = itemsWithSubmenus[itemID];
+      console.log(item);
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
         if (item.classList.contains('menu-item-has-children')) {
-          item.classList.add('dropdown-active');
+
+          item.classList.toggle('dropdown-active');
+          console.log('dropdown-active');
         }
       });
-
-      item.addEventListener('mouseout', () => {
-        if (item.classList.contains('menu-item-has-children')) {
-          item.classList.remove('dropdown-active');
-        }
-      });
-
 
     }
-  }
+  };
 
-
-  // const vrPlayersOuterDivs = document.querySelectorAll('.three-products__product > div:first-child > div:nth-child(2)');
-  // // const vrPlayersInnerDivs = document.querySelectorAll('.three-products__product > div:first-child > div:nth-child(2) > div.ggskin_container:first-child');
-
-  // if (vrPlayersOuterDivs.length != 0) {
-  //   for (vrPlayerID in vrPlayersOuterDivs) {
-  //     if (vrPlayersOuterDivs.hasOwnProperty(vrPlayerID)) {
-  //       const vrPlayerOuter = vrPlayersOuterDivs[vrPlayerID];
-  //       // const vrPlayerInner = vrPlayersInnerDivs[vrPlayerID];
-
-  //       vrPlayerOuter.setAttribute('style', 'height:450px');
-  //       console.log(vrPlayerOuter.style.height);
-  //       // vrPlayerInner.style.top = '400px';
-  //       console.log('========================================');
-  //     }
-  //   }
-  // };
 });

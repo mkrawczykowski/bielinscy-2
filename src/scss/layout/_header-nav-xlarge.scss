@@ -1,0 +1,57 @@
+@media #{$xlarge} {
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    &__logo {
+      margin-right: auto;
+    }
+
+    &__main-menu {
+      display: flex;
+      background-color: #fff;
+      position: relative;
+      height: auto;
+      max-width: none;
+      width: auto;
+
+      & > li {
+        font-size: 24px;
+
+        a {
+          text-decoration: underline;
+        }
+
+        & > .sub-menu {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          opacity: 0;
+          visibility: hidden;
+          background-color: #fff;
+
+          li {
+          }
+        }
+
+        &.dropdown-active {
+          & > .sub-menu {
+            position: absolute;
+            opacity: 1;
+            visibility: visible;
+            top: 40px;
+
+            li {
+            }
+          }
+        }
+      }
+    }
+
+    &__hamburger-menu {
+      display: none;
+    }
+  }
+}

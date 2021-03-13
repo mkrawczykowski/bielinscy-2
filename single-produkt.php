@@ -3,20 +3,13 @@ get_template_part( 'template-parts/header', 'main' );
 get_template_part( 'template-parts/single-produkt', 'title' );
 ?>
 
-<div class="container product-page">
+<div class="container">
   <div class="row my-5">
     <div class="col-4">
-      <div id="product1" style="height: 500px;" class=""></div>
+      <div id="product1" style="height: 500px;" class="three-products__product"></div>
     </div>
     <div class="col-8 mt-5">
-			
-			<?php 
-				$price = get_field('price');
-				if ($price) printf('<h3 class="mb-4 product-page__price">%s</h3>', $price);
-				
-				the_content(); 
-			?>
-			
+      <?php the_content(); ?>
     </div>
   </div>
 </div>
