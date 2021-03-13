@@ -15,17 +15,20 @@
       height: auto;
       max-width: none;
       width: auto;
+      overflow-y: visible;
+      border-left: none;
+      box-shadow: none;
 
       & > li {
         font-size: 24px;
 
         a {
-          text-decoration: underline;
+          text-decoration: none;
         }
 
         & > .sub-menu {
           position: absolute;
-          top: 60px;
+          top: 70px;
           left: 0;
           width: 100%;
           opacity: 0;
@@ -41,7 +44,7 @@
             position: absolute;
             opacity: 1;
             visibility: visible;
-            top: 40px;
+            top: 62px;
 
             li {
             }
