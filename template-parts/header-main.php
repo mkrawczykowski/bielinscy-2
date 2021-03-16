@@ -66,7 +66,7 @@
       <div class="row header-row">
         <div class="col header-col">
           <nav class="logo-nav">
-            <a href="" class="logo-nav__logo">
+            <a href="<?php echo site_url(); ?>" class="logo-nav__logo">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bielinscy-90.webp" alt="Zakład Brązowniczy S.C. Bielińscy - logo">
             </a>
             

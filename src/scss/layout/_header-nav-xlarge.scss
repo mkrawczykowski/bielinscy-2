@@ -48,9 +48,7 @@
           grid-template-columns: 1fr 1fr;
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
-
-          li {
-          }
+          box-shadow: 0 10px 10px 0 rgb(0 0 0 / 15%);
         }
 
         &.dropdown-active {
@@ -69,6 +67,11 @@
             li {
             }
           }
+        }
+
+        &.instagram-icon {
+          text-indent: -9999px;
+          background: url("./images/instagram-icon.webp") no-repeat center center;
         }
       }
     }

@@ -1,6 +1,6 @@
 <div class="page-title">
   <div class="container">
-    <div class="row py-3 py-lg-8">
+    <div class="row py-2 py-lg-2">
       <div class="col-12">
         
           <?php
@@ -25,10 +25,9 @@
                 $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
 
                 echo  '<h2 class="page-title__small-heading">' . $terms . '</h2>';
+                echo  '<h2 class="page-title__big-heading">' . get_the_title() . '</h2>';
             }
           ?>
-        
-        <h1 class="page-title__big-heading"><?php the_title(); ?></h1>
 
       </div>
     </div>      

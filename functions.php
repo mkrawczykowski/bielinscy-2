@@ -48,6 +48,7 @@ function productsFunctions() {
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category' ),
+		'show_in_rest'					=> true,
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -80,3 +81,25 @@ if (function_exists('acf_add_options_page')){
 		'menu_slug' => 'acf-settings'
 	));
 }
+
+function gutenberg_editor_styles() {
+    echo '
+        <style>
+            /* Main column width */
+            .wp-block {
+                max-width: 1320px;
+            }
+  
+            /* Width of "wide" blocks */
+            .wp-block[data-align="wide"] {
+                max-width: 1320px;
+            }
+  
+            /* Width of "full-width" blocks */
+            .wp-block[data-align="full"] {
+                max-width: none;
+            }  
+        </style>
+    ';
+}
+add_action('admin_head','gutenberg_editor_styles');

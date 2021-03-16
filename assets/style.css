@@ -8807,6 +8807,7 @@ body {
   padding: 15px 35px;
   display: inline-block;
   border-radius: 5px;
+  text-decoration: none;
 }
 .button:hover {
   cursor: pointer;
@@ -8887,8 +8888,8 @@ body {
   z-index: 9999;
   background: #fff;
   border-left: 1px solid #f9f7f5;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   overflow-y: scroll;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -8936,6 +8937,8 @@ body {
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .logo-nav__main-menu > li > .sub-menu li a {
   text-transform: none;
@@ -8968,6 +8971,10 @@ body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.logo-nav__main-menu > li.instagram-icon {
+  text-indent: -9999px;
+  background: url(././images/instagram-icon-26.webp) no-repeat center center;
 }
 .logo-nav__main-menu.active {
   right: 0;
@@ -9093,6 +9100,8 @@ body {
     grid-template-columns: 1fr 1fr;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
   }
   .logo-nav__main-menu > li.dropdown-active {
     background-color: #fff;
@@ -9106,6 +9115,10 @@ body {
     visibility: visible;
     top: 62px;
   }
+  .logo-nav__main-menu > li.instagram-icon {
+    text-indent: -9999px;
+    background: url(././images/instagram-icon.webp) no-repeat center center;
+  }
   .logo-nav__hamburger-menu {
     display: none;
   }
@@ -9116,7 +9129,6 @@ body {
   background-size: cover;
 }
 .slider .slider__small-heading {
-  font-size: 16px;
   line-height: 1.5;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
@@ -9125,7 +9137,7 @@ body {
   color: #fff;
 }
 .slider .slider__big-heading {
-  font-size: 68px;
+  font-size: 58px;
   line-height: 1.5;
   color: #fff;
   font-family: "Libre Baskerville", "Times New Roman", Times, serif;
@@ -9197,30 +9209,23 @@ body {
   color: #fff;
 }
 
-.product-archive p {
-  margin-bottom: 1.5rem;
+.three-products__products {
+  padding-top: 50px;
 }
-.product-archive__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2%;
+.three-products__products a {
+  text-decoration: none;
 }
-.product-archive__list .product-archive__item {
-  width: 100%;
-  padding-top: 90%;
-  position: relative;
+.three-products__products a:hover {
+  color: #b57b2f;
 }
-.product-archive__list .product-archive__item span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 35px;
-  right: 0;
-  background-size: contain;
-  background-position: center center;
+.three-products__products a h3 a {
+  color: #1c2647;
 }
-.product-archive__list .product-archive__item h4 {
-  text-align: center;
+.three-products__products a h3:hover {
+  color: #b57b2f;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-form .nf-form-fields-required {
@@ -9286,27 +9291,109 @@ body {
   transition: all 0.3s;
 }
 
-.contact-icons {
+.contact-data__the-content {
+  margin: 20px 0 30px 0;
+}
+.contact-data .contact-icons__telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.contact-data .contact-icons__telephone img {
+  width: 20px;
+  display: inline-block;
+}
+.contact-data .contact-icons__telephone p {
+  margin: 0 0 0 10px;
+}
+.contact-data .contact-icons__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.contact-data .contact-icons__email img {
+  width: 20px;
+  display: inline-block;
+}
+.contact-data .contact-icons__email p {
+  margin: 0 0 0 10px;
+}
+.contact-data .contact-icons__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.contact-data .contact-icons__address img {
+  width: 20px;
+  display: inline-block;
+}
+.contact-data .contact-icons__address p {
+  margin: 0 0 0 10px;
+}
+.contact-data .contact-icons__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.contact-data .contact-icons__info img {
+  width: 20px;
+  display: inline-block;
+}
+.contact-data .contact-icons__info p {
+  margin: 0 0 0 10px;
+}
+
+.product-page__price {
+  font-size: 24px;
+  font-family: "Libre Baskerville", "Times New Roman", Times, serif;
+  line-height: 1.71429;
+  font-weight: 700;
+  color: #2a538b;
+  margin-top: 10px;
+}
+
+.product-archive p {
+  margin-bottom: 1.5rem;
+}
+.product-archive .product-archive__list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  margin-bottom: 50px;
 }
-.contact-icons__telephone {
+.product-archive .product-archive__list .product-archive__item {
+  width: 100%;
+  padding-top: 90%;
+  position: relative;
+}
+.product-archive .product-archive__list .product-archive__item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 35px;
+  right: 0;
+  background-size: contain;
+  background-position: center center;
+}
+.product-archive .product-archive__list .product-archive__item a {
+  text-decoration: none;
+}
+.product-archive .product-archive__list .product-archive__item a h4 {
   text-align: center;
-}
-.contact-icons__telephone img {
-  width: 20px;
-  display: inline-block;
-}
-.contact-icons__email {
-  text-align: center;
-}
-.contact-icons__email img {
-  width: 20px;
-  display: inline-block;
-}
-.contact-icons__address {
-  text-align: center;
-}
-.contact-icons__address img {
-  width: 20px;
-  display: inline-block;
 }

@@ -9,41 +9,40 @@ get_template_part( 'template-parts/page', 'title' );
     <div class="col">
       <div class="container">
       <div class="row">
-        <div class="col-5 contact-form">
+        <div class="col-12 col-lg-4 contact-icons mb-4 mb-lg-0">
+          <div class="container">
+            <div class="row">
+              <div class="col contact-data">
+
+                <?php
+                  
+                  printf('<div class="contact-data__the-content">%s</div>', get_the_content());
+                  
+
+                  if (have_rows('contact-data')){
+                    while(have_rows('contact-data')) : the_row();
+                      $contactDataChooseIcon = get_sub_field('contact-data__choose-icon');
+                      $contactDataSpacer = get_sub_field('contact-data__spacer');
+                      $spacerStyle = '';
+
+                      ($contactDataSpacer) ? $spacerStyle = 'style="margin-bottom: 30px;"' : $spacerStyle = '';
+                      
+                      printf('<div class="contact-icons__%s" %s><img src="%s/assets/images/%s.svg"><p>%s</p></div>', $contactDataChooseIcon, $spacerStyle, get_template_directory_uri(), $contactDataChooseIcon, get_sub_field('contact-data__content'));
+                  endwhile;
+                  }
+                ?>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 contact-form">
           <h2>Formularz kontaktowy</h2>
           <?php
             echo do_shortcode("[ninja_form id='1']");
           ?>
         </div>
-        <div class="col-7 contact-icons">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="contact-icons__telephone">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.svg">
-                  <p>123 456 789</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="contact-icons__email">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg">
-                  <p>kontakt@stronyireszta.pl</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="contact-icons__address">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pin.svg">
-                  <p>ul. Jakaś 2/5
-                    67-987 Ltyuui
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          
-        </div>
+        
       </div>
     </div>
     </div>

@@ -19,7 +19,7 @@
     z-index: 9999;
     background: #fff;
     border-left: 1px solid $color-5;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
     overflow-y: scroll;
     transition: all 0.3s ease-out;
 
@@ -67,6 +67,7 @@
         background-color: #fff;
         position: absolute;
         transition: all 0.1s ease;
+        box-shadow: none;
 
         li {
           a {
@@ -98,10 +99,12 @@
           opacity: 1;
           visibility: visible;
           transition: all 0.3s ease;
-
-          li {
-          }
         }
+      }
+
+      &.instagram-icon {
+        text-indent: -9999px;
+        background: url("./images/instagram-icon-26.webp") no-repeat center center;
       }
     }
 

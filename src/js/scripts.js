@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (itemsWithSubmenus.hasOwnProperty(itemID)) {
       const item = itemsWithSubmenus[itemID];
       item.addEventListener('click', (e) => {
-        (e.target.closest('ul.sub-menu')) ? console.log('tak') : e.preventDefault();
+        (e.target.closest('ul.sub-menu')) ? '' : e.preventDefault();
         if (item.classList.contains('menu-item-has-children')) {
           item.classList.toggle('dropdown-active');
         }
