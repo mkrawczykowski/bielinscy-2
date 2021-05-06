@@ -41,7 +41,7 @@
 						<a href="%s"><h3 class="text-center">%s</h3></a>
 						<div id="product%s" style="height: 500px;" class="three-products__product"></div>
 						<div class="d-flex justify-content-center mt-5">
-							<a class="button button-color-1" href="%s">Dowiedz się więcej</a>
+							<a class="button button--color1" href="%s"><span>Dowiedz się więcej</span><span>Dowiedz się więcej</span></a>
 						</div></div>', $productPermalink, get_the_title($productId), $counter, $productPermalink);
 					$counter++;
 				endwhile;

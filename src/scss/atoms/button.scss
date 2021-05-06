@@ -1,37 +1,77 @@
 .button {
   font-size: 16px;
   line-height: 1.5;
-  padding: 15px 35px;
   display: inline-block;
   border-radius: 5px;
   text-decoration: none;
+  position: relative;
+
+  span:first-child {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+    padding: 15px 35px;
+    color: #fff;
+  }
+
+  span:last-child {
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding: 15px 35px;
+    color: #fff;
+  }
 
   &:hover {
     cursor: pointer;
+
+    span:first-child {
+      position: relative;
+      top: -50px;
+      left: 0;
+      transition: all 0.3s ease;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    span:last-child {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
   }
 
-  &.button-color-1 {
-    color: #fff;
+  &--color1 {
     background-color: $color-1;
     border-color: $color-1;
     transition: all 0.3s;
 
     &:hover {
-      color: #fff;
       background-color: $color-2;
       border-color: $color-2;
       transition: all 0.3s;
     }
   }
 
-  &.button-color-2 {
-    color: #fff;
+  &--color2 {
     background-color: $color-2;
     border-color: $color-2;
     transition: all 0.3s;
 
     &:hover {
-      color: #fff;
       background-color: $color-1;
       border-color: $color-1;
       transition: all 0.3s;
