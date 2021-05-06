@@ -1,13 +1,12 @@
 <div class="slider">
   <div class="container">
-    <div class="row py-3 py-lg-8">
+    <div class="row py-3 py-lg-8  h-100 align-items-center">
       <div class="col-12 col-lg-6">
         <?php
           $mainSectionFrontpageText = get_sub_field('main-section-frontpage__text');
           if ($mainSectionFrontpageText){
             printf('<h1 class="slider__big-heading">%s</h1>', $mainSectionFrontpageText);
           }
-
 
           $mainSectionFrontpageParagraph = get_sub_field('main-section-frontpage__paragraph');
           if ($mainSectionFrontpageText){
@@ -23,7 +22,7 @@
         ?>
         
       </div>
-      <div class="col-12 col-lg-6"></div>
+      <div class="col-12 d-none col-lg-6 d-lg-block"></div>
     </div>
   </div>
 </div>

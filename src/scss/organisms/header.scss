@@ -1,0 +1,11 @@
+@import "../molecules/logo-nav";
+@import "../molecules/logo-nav-xlarge";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
+}

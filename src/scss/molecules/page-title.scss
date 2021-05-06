@@ -1,51 +1,5 @@
-body {
-  position: relative;
-}
-
-.dropdown-large {
-  padding: 20px;
-}
-
-@media all and (min-width: 992px) {
-  .dropdown-large {
-    min-width: 500px;
-  }
-}
-
-@import "./header-nav";
-@import "./header-nav-xlarge";
-
-.slider {
-  min-height: 500px;
-  background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
-  background-size: cover;
-
-  .slider__small-heading {
-    line-height: 1.5;
-    font-family: $font-2;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #fff;
-  }
-
-  .slider__big-heading {
-    font-size: 58px;
-    line-height: 1.5;
-    color: #fff;
-    font-family: $font-1;
-    font-weight: 400;
-    text-transform: none;
-  }
-
-  .slider__paragraph {
-    color: #fff;
-    border-left: 2px solid $color-2;
-    padding-left: 30px;
-  }
-}
-
 .page-title {
+  margin-top: 110px;
   padding-top: 40px;
   padding-bottom: 36px;
   background: url("./images/bielinscy-frontpage.webp") no-repeat center center;

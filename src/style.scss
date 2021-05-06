@@ -1,15 +1,22 @@
 @charset "UTF-8";
 
-@import "scss/base/variables";
+@import "scss/variables";
 @import "~bootstrap/scss/bootstrap-grid";
-@import "scss/base/reset";
-@import "scss/base/typography";
-@import "scss/base/global";
+@import "~bootstrap/scss/bootstrap-utilities";
+@import "scss/reset";
+@import "scss/typography";
+@import "scss/global";
 
-@import "scss/layout/header";
-@import "scss/layout/footer";
+@import "scss/atoms/button";
 
-@import "scss/pages/front-page";
-@import "scss/pages/contact";
-@import "scss/pages/product-page";
+@import "scss/molecules/contact-form";
+@import "scss/molecules/dropdown-large";
+@import "scss/molecules/page-title";
+@import "scss/molecules/slider";
+@import "scss/molecules/three-products";
+
+@import "scss/organisms/header";
+@import "scss/organisms/footer";
+
 @import "scss/pages/product-archive";
+@import "scss/pages/product-page";

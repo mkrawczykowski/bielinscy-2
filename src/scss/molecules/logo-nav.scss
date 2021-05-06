@@ -11,7 +11,7 @@
   &__main-menu {
     background-color: #fff;
     position: fixed;
-    top: 90px;
+    top: 110px;
     right: -360px;
     height: 100vh;
     width: 100%;
@@ -19,9 +19,10 @@
     z-index: 9999;
     background: #fff;
     border-left: 1px solid $color-5;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 15%);
     overflow-y: scroll;
     transition: all 0.3s ease-out;
+    z-index: 10;
 
     & > li {
       font-size: 24px;
