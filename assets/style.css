@@ -16906,7 +16906,7 @@ body {
   }
 }
 .page-title {
-  margin-top: 110px;
+  margin-top: 80px;
   padding-top: 40px;
   padding-bottom: 36px;
   background: url(././images/bielinscy-frontpage.webp) no-repeat center center;
@@ -16933,12 +16933,22 @@ body {
   color: #fff;
 }
 .page-title .page-title__big-heading {
-  font-size: 68px;
+  font-size: 38px;
   line-height: 1.5;
   color: #fff;
   font-family: "Libre Baskerville", "Times New Roman", Times, serif;
   font-weight: 400;
   text-transform: none;
+}
+@media only screen and (min-width: 1200px) {
+  .page-title .page-title__big-heading {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .page-title .page-title__big-heading {
+    font-size: 58px;
+  }
 }
 .page-title .page-title__paragraph {
   color: #fff;
@@ -17340,6 +17350,24 @@ body {
   text-align: center;
 }
 
+.product-page__product {
+  height: 300px;
+}
+@media only screen and (min-width: 768px) {
+  .product-page__product {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .product-page__product {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .product-page__product {
+    height: 600px;
+  }
+}
 .product-page__price {
   font-size: 24px;
   font-family: "Libre Baskerville", "Times New Roman", Times, serif;

@@ -1,5 +1,5 @@
 .page-title {
-  margin-top: 110px;
+  margin-top: 80px;
   padding-top: 40px;
   padding-bottom: 36px;
   background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
@@ -29,12 +29,19 @@
   }
 
   .page-title__big-heading {
-    font-size: 68px;
+    font-size: 38px;
     line-height: 1.5;
     color: #fff;
     font-family: $font-1;
     font-weight: 400;
     text-transform: none;
+
+    @media #{$xlarge} {
+      font-size: 48px;
+    }
+    @media #{$xxxlarge} {
+      font-size: 58px;
+    }
   }
 
   .page-title__paragraph {

@@ -63,7 +63,6 @@
 				skin=new object2vrSkin(obj);
 				obj.readConfigUrl("<?php echo get_stylesheet_directory_uri(); ?>/assets/object2vr/settings.xml");
 				
-				setTimeout(function() { hideUrlBar(); }, 10);
 				
 				obj2=new object2vrPlayer("product2");
 				skin=new object2vrSkin(obj2);

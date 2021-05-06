@@ -25,10 +25,9 @@
                 $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
 
                 echo  '<h2 class="page-title__small-heading">' . $terms . '</h2>';
-                echo  '<h2 class="page-title__big-heading">' . get_the_title() . '</h2>';
+                echo  '<h1 class="page-title__big-heading">' . get_the_title() . '</h1>';
             }
           ?>
-
       </div>
     </div>      
   </div>

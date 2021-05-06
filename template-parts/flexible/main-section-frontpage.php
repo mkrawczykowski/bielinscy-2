@@ -1,7 +1,7 @@
 <div class="slider">
   <div class="container">
-    <div class="row py-3 py-lg-8  h-100 align-items-center">
-      <div class="col-12 col-lg-6">
+    <div class="row py-3 py-md-8  h-100 align-items-center">
+      <div class="col-12 col-sm-6 col-md-5">
         <?php
           $mainSectionFrontpageText = get_sub_field('main-section-frontpage__text');
           if ($mainSectionFrontpageText){
@@ -22,7 +22,7 @@
         ?>
         
       </div>
-      <div class="col-12 d-none col-lg-6 d-lg-block"></div>
+      <div class="col-12 d-none col-sm-6 col-md-7 d-lg-block"></div>
     </div>
   </div>
 </div>
