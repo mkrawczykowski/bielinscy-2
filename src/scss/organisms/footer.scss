@@ -3,10 +3,6 @@
 
   p {
     color: #fff;
-
-    a {
-      color: #fff;
-    }
   }
 
   h1,
@@ -17,5 +13,9 @@
   h6 {
     color: #fff;
     font-family: $font-2;
+  }
+
+  a {
+    color: #fff;
   }
 }

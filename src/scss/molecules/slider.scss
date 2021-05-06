@@ -1,0 +1,53 @@
+.slider {
+  margin-top: 60px;
+  min-height: 400px;
+  background: url("./images/bielinscy-frontpage.webp") no-repeat center center;
+  background-size: cover;
+  display: grid;
+
+  @media #{$large} {
+    min-height: 500px;
+  }
+
+  @media #{$xxxlarge} {
+    min-height: 700px;
+  }
+
+  .container,
+  .row,
+  .col {
+    height: 100%;
+  }
+
+  &__small-heading {
+    line-height: 1.5;
+    font-family: $font-2;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__big-heading {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: $font-1;
+    font-weight: 400;
+    text-transform: none;
+
+    @media #{$large} {
+      font-size: 50px;
+    }
+
+    @media #{$xxxlarge} {
+      font-size: 58px;
+    }
+  }
+
+  &__paragraph {
+    color: #fff;
+    border-left: 2px solid $color-2;
+    padding-left: 30px;
+  }
+}

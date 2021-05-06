@@ -1,17 +1,10 @@
-body {
-  font-family: $font-2;
-  font-size: 14px;
-  line-height: 1.71429;
-  font-weight: 400;
-  color: $color-3;
-}
-
 .button {
   font-size: 16px;
   line-height: 1.5;
   padding: 15px 35px;
   display: inline-block;
   border-radius: 5px;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
@@ -44,8 +37,4 @@ body {
       transition: all 0.3s;
     }
   }
-}
-
-.background-light {
-  background-color: $color-5;
 }

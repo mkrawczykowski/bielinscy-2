@@ -1,0 +1,23 @@
+.three-products {
+  &__products {
+    padding-top: 50px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $color-2;
+      }
+
+      h3 {
+        a {
+          color: $color-4;
+        }
+        &:hover {
+          color: $color-2;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}

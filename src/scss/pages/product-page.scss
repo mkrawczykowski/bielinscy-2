@@ -1,0 +1,10 @@
+.product-page {
+  &__price {
+    font-size: 24px;
+    font-family: $font-1;
+    line-height: 1.71429;
+    font-weight: 700;
+    color: $color-1;
+    margin-top: 10px;
+  }
+}
