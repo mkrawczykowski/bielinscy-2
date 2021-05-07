@@ -16,20 +16,24 @@ get_template_part( 'template-parts/single-produkt', 'title' );
     </div>    
     <div class="col-12 col-md-5 col-lg-6">
       <?php
-				the_content();
+        the_content();
+        the_field('folder-name');
 			?>
     </div>
 
-    
   </div>
 </div>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/object2vr/object2vr_player.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/object2vr/skin.js"></script>
+<?php
+  $folderName = get_field('folder-name');
+?>
+
+<script type="text/javascript" src="<?php echo get_site_url(); ?>/produkty/<?php echo $folderName; ?>/object2vr_player.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url(); ?>/produkty/<?php echo $folderName; ?>/skin.js"></script>
       
 <script type="text/javascript">
 	obj=new object2vrPlayer("product");
 	skin=new object2vrSkin(obj);
-	obj.readConfigUrl("<?php echo get_stylesheet_directory_uri(); ?>/assets/object2vr/settings.xml");
+	obj.readConfigUrl("<?php echo get_site_url(); ?>/produkty/<?php echo $folderName; ?>/settings.xml");
 </script>
 
 <?php
